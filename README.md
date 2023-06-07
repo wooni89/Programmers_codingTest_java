@@ -1,2 +1,3 @@
-# Programmers_codingTest_java
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Programmers_codingTest_java 6월 점수 기록
+- 6일(화)
+  - 1037점
