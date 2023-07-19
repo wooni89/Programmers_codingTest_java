@@ -1,19 +1,17 @@
 import java.util.Arrays;
-import java.util.Collections;
 
 class Solution {
     public long solution(long n) {
         long answer = 0;
         String[] str = Long.toString(n).split("");
-        Arrays.sort(str, Collections.reverseOrder());
+        Arrays.sort(str);
         
-        String stan = "";
+        StringBuilder sb = new StringBuilder();
         
         for (String s : str) {
-            stan += s;
+            sb.append(s);
         }
         
-        answer = Long.parseLong(stan);
-        return answer;
+        return Long.parseLong(sb.reverse().toString());
     }
 }
