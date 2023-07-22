@@ -1,18 +1,13 @@
 class Solution {
-    public int solution(int num) {
-        int count = 0;
-        long numLong = num;
-        while (numLong != 1) {
-            // 500번 수행했을 경우
-            if (count == 500) {
-                count = -1;
-                break;
+    public long solution(long num) {
+        long answer = 0;
+        while (num != 1) {
+        num = (num % 2 ==0) ? num / 2 : num * 3 + 1;
+            answer++;
+            if (answer >= 500) {
+                return -1;
             }
-            
-            numLong = numLong % 2 == 0 ? numLong / 2 : numLong * 3 + 1;
-            count++;
-
         }
-        return count;
+        return answer;
     }
 }
