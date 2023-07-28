@@ -1,13 +1,9 @@
 class Solution {
     public String solution(int n) {
-        String answer = "";
+        StringBuffer sb = new StringBuffer();
         for (int i = 0; i < n ; i++) {
-            if (i % 2 == 0) {
-                answer += "수";
-            } else {
-                answer += "박";
-            }
+            sb.append((i % 2 == 0) ? "수" : "박");
         }
-        return answer;
+        return sb.toString();
     }
 }
